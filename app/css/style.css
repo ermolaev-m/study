@@ -1,0 +1,26 @@
+body {
+    front-family: "Verdana"; sans-serif;
+    margin: 3%;
+}
+
+.menu {
+    background: coral;
+    list-style: none;
+    margin: 0;
+    padding: 1em;
+    text-align: center;
+    display: block, inline;
+    width: 400 px;
+}
+
+.menu li {
+    color: #fff
+}
+
+.menu a {
+    color: #fff;
+    display: block;
+    front-weight: bold;
+    text-decoration: none;
+    front-size: 14px;
+}
