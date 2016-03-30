@@ -2,34 +2,157 @@
 
 body {
     front-family: "Verdana"; sans-serif;
-    margin: 3%;
+    margin:;
 }
 
 
-.menu {
-    position: right;
-    background: coral;
+.logo {
+    float: left;
+    width: 50%; /* Ширина */
+    margin: 10px 10px; /* Отступ*/
+    border-radius: 50px; /* Радиус скругления */
+    padding: 0; 
+}
+
+
+
+.head-1 {
+    float: left;
+    width: 50%;
+    position: relative;
+      
+}
+
+
+.head-2 { /*размещение текста слева от лого*/
+    clear: left;
     list-style: none;
     margin: 0;
-    padding: 1em;
-    text-align: center;
-    display: block, inline;
-    width: 400 px;
+    padding: 15px;
+    text-align: left;
+    display: block; 
+    text-decoration: none;
+    font-size: 18px;
 }
 
-.slider {
-    mergin: 20px;
+
+.form-row label {
+   display: block;
+   display: bold;
+   margin-bottom: 10px;    
+}
+
+.form-row .form-input input,
+.form-row .form-input textarea {
+    border: 1px solid #999;
+    padding: 5px;  
+    width: 100%;
+}
+
+.menu,
+.menu ul {
     list-style: none;
+    position: center; 
+    background: cadetblue;
+    margin: 0px;
+    padding: 0px;
+    vertical-align: middle;
+    display: block;
+    text-decoration: none;
+    overflow: hidden;
 }
 
 .menu li {
-    color: #fff
+    position: relative;
+    display: inline-block;
+    font-weight: bold; 
+    padding: 0px;
+    padding: 0px;
+    vertical-align: middle;
+    list-style: none;
+    background: burlywood;             
+}
+
+
+.menu li:hover {
+    background: burlywood;
+    display: block;
+}
+
+.menu > li {
+    float: left;
 }
 
 .menu a {
-    color: #fff;
     display: block;
-    front-weight: bold;
+    padding: 10px;
     text-decoration: none;
-    front-size: 14px;
+    vertical-align: middle;
+    font-size: 22px; 
+    color: #fff;
+}
+
+.menu ul {
+    display: none;
+    z-index: 9999;
+    width: 400px;
+    display: none;
+}
+
+.row:after {
+    clear: both;
+    
+}
+
+.slider {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.p {
+   padding: 50px;
+   font-size: 18px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	display: none;
+	pointer-events: none;
+}
+
+
+.close { 
+background: #606061; 
+color: #FFFFFF; 
+line-height: 25px; 
+position: absolute; 
+right: -12px; 
+text-align: center; 
+top: -10px; 
+width: 24px; 
+text-decoration: none; 
+font-weight: bold; 
+-webkit-border-radius: 12px; 
+-moz-border-radius: 12px; 
+border-radius: 12px; 
+-moz-box-shadow: 1px 1px 3px #000; 
+-webkit-box-shadow: 1px 1px 3px #000; 
+box-shadow: 1px 1px 3px #000; 
+} 
+ 
+.close:hover {
+     background: #00d9ff; 
 }
