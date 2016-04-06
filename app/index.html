@@ -1,130 +1,249 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-       <!--Юридические услуги-->
-        <meta charset="utf-8">
-        <title>Судебный представитель Ермолаев и партнёры</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    
-    <body>
-<div class="row">
-    <div class="col-4 help-img">
-        <img class="logo" src="/img/logo.jpg" alt="Арбитражный центр Egolex">
-        <p></p>
-    </div>
-    <div class="col-4">
-        <div class="head-1"> <!--Сделать ссылки на социальные группы-->
-            <ul>
-                <li>...</li>
-                <li>...</li>
-                <li>...</li>
-                <li>...</li>
-                <li>...</li>
-            </ul>
-        </div>
-    </div>
-    <div class="col-4">
-        <ul class="head-2">
-            <li>Получите правовую помощь</li>
-            <li>немедленно (доступно 24/7):</li>
-            <li>+7 911 089 23 55</li>
-            <li><a href="mailto:ermolaev-m@mail.ru">ermolaev-m@mail.ru</a></li>
-            <li><a href="/">egolex.ru</a></li>
-        </ul>
-    </div>
-</div>
-<div class="wrapper">
-<div class="row"> <!--Сделать выпадающее меню-->
-    <div class="col-12">
-        <ul class="menu form-row">
-                <li><a href="/wa.html">О нас</a>
-                    <ul>
-                        <li>
-                            <a href="#">Персонали</a>
-                         </li>
-                        <li>
-                            <a href="#">Наши преимущества</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="with=device-with, initial-scale=1">
+    <title>Super site</title>
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/normalize-css/normalize.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Верхний блок: меню и форма поиска -->
+        <div class="wraper">
+        <header class="header">
+            <div class="slider-wraper">
+            <div class="row">
+                <!-- Меню -->
+                
+                <div class="col-lg-5 col-md-5 col-mob-12">
+                    <nav><ul class="menu">
+                        <li><a href="#Item1">Item 1</a>
+                            <ul class="pod-menu">
+                                <li><a href="#petya1">Петя 1</a></li>
+                                <li><a href="#petya2">Петя 2</a></li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="#">Чайная</a>
+                        <li><a href="#Item2">Item 2</a>
+                            <ul class="pod-menu">
+                                <li><a href="#vasya1">Вася 1</a></li>
+                                <li><a href="#vasya2">Вася 2</a></li>
+                            </ul>
                         </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="/gd.html">Гражданские споры</a>
-                        <ul>
-                            <li>
-                                <a href="#">Казуистика</a>
-                            </li>
-                            <li>
-                                <a href="#">Выбор услуги</a>    
-                            </li>
-                            <li>
-                                <a href="#">Случаи из жизни</a>
-                            </li>
-                        </ul>
-                </li>
-   
-                <li><a href="/ad.html">Арбитражные споры</a>
-                    <ul>
-                        <li><a href="#">Компетенция</a></li>
-                        <li><a href="#">Суд "под ключ"</a></li>
-                        <li><a href="#">Наша практика</a></li>
-                    </ul>
-                </li>
-    <li><a href="/ug.html">Уголовные дела</a>
-        <ul>
-            <li><a href="#">Привлечение адвоката</a></li>
-            <li><a href="#"></a>Возможности защиты</li>
-            <li><a href="#"></a>Калькулятор услуг</li>
-        </ul>
-    </li>
-    
-    <li><a href="/contact.html">Контакты</a></li>
-</ul>
-</div>    
-    </div>
-    </div>
+                        <li><a href="#Item3">Item 3</a>
+                            <ul class="pod-menu">
+                                <li><a href="#andrei1">Андрей 1</a></li>
+                                <li><a href="#andrei2">Андрей 2</a></li>
+                            </ul>
+                        </li>
+                    </ul></nav>
+                </div>
+                
+                <!--Меню --->
+                
+                <!-- Форма поиска -->
+                <div class="col-lg-4 col-md-4 col-mob-12 col-12">
+                    <div class="search">
+                        <input type="text" placeholder="Введите текст для поиска">
+                       <button>
+                           <i class="fa fa-search"></i>
+                       </button> 
+                         
+                    </div>
+                </div>
+               <!-- Форма поиска -->
+                
+                <!--Форма заявки -->
+                <div class="col-lg-3 col-md-3 col-mob-12 col-12">
+                <div class="zayavka">   
+                <a href="#openModal"><img src="/img/img2.png" alt="Отправить заявку"></a>
+                    <div id="openModal" class="modalDialog">
+                        <div><a href="#close" title="Закрыть" class="close">X</a>
+                        <h2>Вопрос юристу</h2>
+                        <div>
+                            <div>
+                                <label for="name">Фамилия, имя, отчество</label>
+                                <input type="text" placeholder="Иванов Иван Иванович">
+                            </div>
+                            <div>
+                                <label for="email">E-mail</label>
+                                <input type="text" placeholder="ivan@ya.ru">
+                            </div>
+                            <div>
+                                <label for="tel">Телефон</label>
+                                <input type="tel" placeholder="+7 812 000 00 00">
+                            </div>
+                             <p>Опишите вашу ситуацию</p>
+                                <p><textarea name="comment" cols="60" rows="10"></textarea></p>
+                            <div>
+                                <input type="submit" value="Отправить">
+                            </div>
 
-<!--<slider class="slider"><ul>
-    <li><img src="" alt=""></li>
-    <li><img src="" alt=""></li>
-    <li><img src="" alt=""></li>
-</ul>
-</slider> -->
-<div class="row">
-    <div class="row-12">
-        <div class="p">
-        <p>Вы ищите правовую помощь?</p>
-        <p>Не знаете, как правильно по закону поступить?</p>
-        <p>На вас подали в суд?</p>
-        <p>Вы выяснили, что ваши права нарушены и требуются их немедленная защиты?</p>
-        <p>Вы нашли, что искали. Правовая помощь по гражданским, арбитражным, административным и уголовным делам.</p>
-        <p>Вы можете отправить заявку на предварительную консультацию прямо сейчас:</p>
-        <p>Записаться на предварительную консультацию можно и по телефону: +7 911 089 23 55.</p>
-        <p>Каждая шестая консультация предоставляется бесплатно.</p>
- </div>
+                        </div>
+                </div>                  
+            </div> 
+            </div>
+            </div>       
+                
+            </div>
+            </div>
+         </header>
+         <!-- Верхний блок: меню и форма поиска -->
+         
+            <main>
+             
+                
+            <div class="row">
+                <div class="col-12 col-lg-8 col-md-12 col-mob-12">            
+                <div class="slider"></div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-6 col-mob-12">
+                <div class="block yellow">
+                    <p><a href="#">Защита прав</a></p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-6 col-mob-12">
+                <div class="block blue">
+                    <p><a href="#">Договора</a></p>
+                    </div>                    
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12 col-lg-12 col-md-12 col-mob-12">
+                    <div class="block-center1">
+                       <h3 class="title">Welcome to Law Firm - Providing Legal Help</h3>
+                        <h4 class="subtitle">Experience .Reliability .Ethics</h4>
+                        <p></p>
+                        <p  align="left">There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form by injected humour or randomised words which looks anitime even believable. If you are going to use passage of lorem Ipsum you need to be sure there is anything works lorem ipsum as their default model text and search for loremipsum will uncover many web sites still in their infancy various versions have evolved over the years.</p>
+                        <h5>Get your Free Consultation  <strong>+7 (911) 089-23-55</strong> Available 24/7</h5>
+                        
+                    </div>
+                </div>
+            </div>
+     
+            
+            <div class="row grey">
+                <div class="for">
+                    <div class="col-lg-3 col-md-3 col-mob-6">
+                        <h2>Новость 1</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam cum at modi architecto deserunt dolorem hic ex vero, explicabo atque repellat sapiente, accusamus, sint! Commodi eos, unde et nostrum! Provident.</p>
+                    </div> 
+                    <div class="col-lg-3 col-md-3 col-mob-6">
+                        <h2>Новость 2</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe quisquam placeat itaque tempora similique quaerat eius, nulla, explicabo. Saepe quidem perferendis aperiam, quas officiis, quisquam pariatur aliquid doloremque explicabo cumque.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-mob-6">
+                        <h2>Новость 3</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio labore perspiciatis beatae ratione itaque unde est reprehenderit vero ipsam! Nam expedita eveniet, mollitia harum dolore libero, unde id quisquam voluptas.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-mob-6">
+                        <h2>Новость 4</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt repellendus tenetur consequuntur, nisi commodi aperiam quae, autem sapiente, neque omnis maiores facere inventore sequi aspernatur nostrum, nihil! Veniam, expedita, maxime.</p>
+                    </div>
+                </div>
+            </div>
+                        <!-- ссылки из меню на страницу -->
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-mob-12"></div>
+                <div class="petya" id="Item1">
+                    <h2><b>Item 1</b></h2>
+                    <p>Верстка рабочего макета корпоративного сайта с учетом полученных на курсах знаний. Ура базоввые знания усвоены. Все теги и их значения в курс изучение невходили. Но уже есть возможность творить и делать нужные для дела вещи.</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-mob-12">
+                    <div class="ground" id="petya1">
+                        <img src="/img/foto-1-1.jpg" alt="Петя 1" class="img-r">
+                        <h2>Петя 1</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium molestiae expedita, quas dolorum non asperiores ad odio, nulla delectus, beatae ipsum alias quod et assumenda dolorem. Consequuntur aperiam, maxime dolorem!</p>
+                    </div>
+                </div>
+                    <div class="col-lg-6 col-md-6 col-mob-12">
+                        <div class="ground" id="petya2">
+                            <img src="/img/foto-1-2.jpg" alt="Петя 2" class="img-r">
+                            <h2>Петя 2</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium molestiae expedita, quas dolorum non asperiores ad odio, nulla delectus, beatae ipsum alias quod et assumenda dolorem. Consequuntur aperiam, maxime dolorem!</p>
+                        </div>
+                    </div>   
+            </div>
+          
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-mob-12"></div>
+                <div class="petya2" id="Item2">
+                    <h2><b>Item 2</b></h2>
+                    <p>Вы ищите правовую помощь?</p>
+                    <p>Не знаете, как правильно по закону поступить?</p>
+                    <p>На вас подали в суд?</p>
+                    <p>Вы выяснили, что ваши права нарушены и требуются их немедленная защиты?</p>
+                    <p>Вы нашли, что искали. Правовая помощь по гражданским, арбитражным, административным и уголовным делам.</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-mob-12">
+                        <div class="ground2" id="vasya1">
+                            <img src="/img/foto-2-1.jpg" alt="Вася 1" class="img-r">
+                            <h2>Вася 1</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium molestiae expedita, quas dolorum non asperiores ad odio, nulla delectus, beatae ipsum alias quod et assumenda dolorem. Consequuntur aperiam, maxime dolorem!</p>
+                        </div>
+                </div>    
+                 <div class="col-lg-6 col-md-6 col-mob-12">
+                    <div class="ground2" id="vasya2">
+                        <img src="/img/foto-2-2.jpg" alt="Вася 2" class="img-r">
+                        <h2>Вася 2</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium molestiae expedita, quas dolorum non asperiores ad odio, nulla delectus, beatae ipsum alias quod et assumenda dolorem. Consequuntur aperiam, maxime dolorem!</p>
+                    </div>
+                 </div>  
+             </div>
+             
+             <div class="row">
+                <div class="col-lg-12 col-md-12 col-mob-12"></div>
+                <div class="petya3" id="Item3">
+                    <h2><b>Item 3</b></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia tenetur est doloribus suscipit, ratione dicta! Corrupti ipsam, quaerat sit nobis deleniti aliquid hic impedit inventore maiores nam perspiciatis recusandae velit.</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-mob-12">
+                        <div class="ground3" id="andrei1">
+                            <img src="/img/foto-3-1.jpg" alt="Андрей 1" class="img-r">
+                            <h2>Андрей 1</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium molestiae expedita, quas dolorum non asperiores ad odio, nulla delectus, beatae ipsum alias quod et assumenda dolorem. Consequuntur aperiam, maxime dolorem!</p>
+                        </div>
+                </div>    
+                 <div class="col-lg-6 col-md-6 col-mob-12">
+                    <div class="ground3" id="andrei2">
+                        <img src="/img/foto-3-2.jpg" alt="Андрей 2" class="img-r">
+                        <h2>Андрей 2</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium molestiae expedita, quas dolorum non asperiores ad odio, nulla delectus, beatae ipsum alias quod et assumenda dolorem. Consequuntur aperiam, maxime dolorem!</p>
+                    </div>
+                 </div>  
+             </div>
+             
+            </main>
+            
+            <footer>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-mob-6">
+                        <p class="copyright">Copyright@Ermolaev Maksim Magomedovich</p>
+                     </div>
+                     <div class="col-lg-6 col-md-6 col-mob-6">
+                        <nav class="footer">
+                            <ul>
+                                <li><a href="#">Privacy policy |</a></li>
+                                <li><a href="#">Careers</a></li>
+                            </ul>
+                        </nav> 
+                         </div>   
+                        
+                    </div>
+                </div>
+            </footer>
+      
     </div>
-        </div>
-        
-       <div class="row row-12">
-           <div><input type="button" value="Обратиться к юристу"><a href="#openModal"></a></div>
-           
-<div id="openModal" class="modalDialog">
-	<div>
-		<a href="#close" title="Закрыть" class="close">X</a>
-		</div>
-</div>
-
-       </div>    
-            <div class="overlay">
-            <div class="modal-window">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quasi inventore omnis, consequuntur architecto. Molestias nobis commodi nihil. Suscipit dolorem laborum praesentium necessitatibus quis architecto excepturi esse adipisci ad tempore.</p></div><div class="va-helper"></div>
-        </div>
-       
-        
-        <p><img src="/img/lawer1.png" alt="Судья в мантии"></p>
-    
-    </body>
-    </html>
+</body>
+</html>

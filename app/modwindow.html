@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Модальное окно</title>
+    <link rel="stylesheet" href="css/modwindow.css">s
+</head>
+<body>
+    <div id="wrapper">
+        	
+            <div id="content">
+                <h1>Модальное окно на CSS</h1>
+                <section>
+
+                    <div class="wrap">
+                    
+                      <p>Использован псевдо-селектор :target</p>
+                      <a href="#modal-one" class="btn">Открыть</a>
+                      
+                    </div>
+                     
+                    <!-- Modal -->
+                    <div class="modal" id="modal-one" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-header">
+                          <h2>Здравствуйте</h2>
+                          <a href="#close" class="btn-close" aria-hidden="true">×</a>
+                        </div>
+                        <div class="modal-body">
+                          <p>На Ваш ресурс поступило уведомление от Роскомнадзора с указанием на размещение незаконной информации.</p>
+                        </div>
+                        <div class="modal-footer">
+                          <a href="#close" class="btn">Закрыть</a>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /Modal -->
+                    
+                </section>
+            </div>
+        
+</body>
+</html>

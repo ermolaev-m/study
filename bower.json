@@ -1,0 +1,22 @@
+{
+  "name": "306",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Maksim Ermolaev <ermolaev-m@mail.ru>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/ermolaev-m/study",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "normalize.css#^4.0.0",
+    "font-awesome": "Font-Awesome#^4.5.0"
+  }
+}
